@@ -111,5 +111,5 @@ if __name__ == '__main__':
     busted_dictionary = main();
 
     # print_ip_addresses(busted_dictionary);
-    # print_ip_addresses_and_score(busted_dictionary);
-    print_ip_addresses_and_clues(busted_dictionary);
+    print_ip_addresses_and_score(busted_dictionary);
+    # print_ip_addresses_and_clues(busted_dictionary);

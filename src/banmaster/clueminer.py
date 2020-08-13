@@ -3,9 +3,6 @@ import re;
 
 class secureClueMiner:
 
-    # time_stamp_pattern = "";
-    ip_address_pattern = r"[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}";
-
     score_tokens = secure_log_score_tokens; # secure_log_score_tokens are defined in config.py
 
     # secureCluesStructure = \
@@ -25,7 +22,7 @@ class secureClueMiner:
 
     def get_ip_address(self, message_string):
         the_ip_address = None;
-        the_result = re.search(self.ip_address_pattern, message_string);
+        the_result = re.search(ip_address_pattern, message_string); # ip_address_pattern is set in technical section of the config.py
         if the_result:
             the_ip_address = the_result.group(0);
         return the_ip_address;
